@@ -21,12 +21,12 @@
             <div class="text-gray-800 dark:text-gray-300 font-medium mb-2">{{ linkGroup.title }}</div>
             <ul v-if="Array.isArray(linkGroup.items) && linkGroup.items.length > 0" class="text-sm">
               <li v-for="(item, index2) in linkGroup.items" :key="index2" class="mb-2">
-                <router-link
+                <RouterLink
                   class="text-gray-600 hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out"
                   :to="item.href"
                 >
                   {{ item.title }}
-                </router-link>
+                </RouterLink>
               </li>
             </ul>
           </div>
@@ -34,14 +34,14 @@
         <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
           <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0">
             <li v-for="(socialItem, index) in social" :key="index">
-              <a
-                :href="socialItem.href"
+              <RouterLink
+                :to="socialItem.href"
                 class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                 :aria-label="socialItem.label"
                 :title="socialItem.label"
               >
                 <component :is="socialItem.icon" />
-              </a>
+              </RouterLink>
             </li>
           </ul>
   
@@ -50,9 +50,9 @@
               class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"
             ></span>
             Made by{" "}
-            <a class="text-secondary-800 underline dark:text-gray-200" href="https://onwidget.com/">
+            <RouterLink class="text-secondary-800 underline dark:text-gray-200" to="https://onwidget.com/">
               onWidget
-            </a>
+            </RouterLink>
             · All rights reserved.
           </div>
         </div>

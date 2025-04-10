@@ -28,10 +28,10 @@
             <div
               class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-7xl">
               <div class="flex w-full sm:w-auto">
-                <a class="btn btn-primary sm:mb-0 w-full" href="https://github.com/onwidget/qwind" target="_blank"
+                <RouterLink class="btn btn-primary sm:mb-0 w-full" to="https://github.com/onwidget/qwind" target="_blank"
                   rel="noopener">
                   Get template
-                </a>
+                </RouterLink>
               </div>
               <div class="flex w-full sm:w-auto">
                 <button class="btn w-full bg-gray-50 dark:bg-transparent">Learn more</button>
@@ -48,3 +48,7 @@
     </div>
   </section>
 </template>
+
+<script setup>
+ import { RouterLink } from 'vue-router';
+</script>

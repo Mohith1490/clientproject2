@@ -11,9 +11,9 @@
     <div class="absolute inset-0"></div>
     <div class="relative text-default py-3 px-3 md:px-6 mx-auto w-full md:flex md:justify-between max-w-7xl">
       <div class="mr-auto rtl:mr-0 rtl:ml-auto flex justify-between">
-        <a class="flex items-center" href="/">
+        <RouterLink class="flex items-center" to="/">
           <Logo />
-        </a>
+        </RouterLink>
         <div class="flex items-center md:hidden">
           <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />
           <ToggleMenu />
@@ -37,22 +37,22 @@
               </button>
               <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-slate-800 rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl">
                 <li v-for="(subItem, index2) in menuItem.items" :key="index2">
-                  <a
+                  <RouterLink
                     class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap"
-                    :href="subItem.href"
+                    :to="subItem.href"
                   >
                     {{ subItem.text }}
-                  </a>
+                  </RouterLinK>
                 </li>
               </ul>
             </template>
             <template v-else>
-              <router-link
+              <RouterLink
                 class="hover:text-link dark:hover:text-white px-4 py-3 flex items-centers"
                 :to="menuItem.href"
               >
                 {{ menuItem.text }}
-              </router-link>
+              </RouterLink>
             </template>
           </li>
         </ul>
@@ -63,12 +63,12 @@
             <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />
           </div>
           <span class="ml-4 rtl:ml-0 rtl:mr-4">
-            <a
-              href="https://github.com/onwidget/qwind"
+            <RouterLink
+              to="https://github.com/onwidget/qwind"
               class="btn btn-primary ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto"
             >
               Download
-            </a>
+            </RouterLink>
           </span>
         </div>
       </div>
@@ -82,6 +82,7 @@ import Logo from '../common/Logo.vue'
 import ToggleTheme from '../common/ToggleTheme.vue'
 import ToggleMenu from '../common/ToggleMenu.vue'
 import IconChevronDown from '../icons/IconChevronDown.vue'
+import { RouterLink } from 'vue-router'
 
 
 const menu = ref({

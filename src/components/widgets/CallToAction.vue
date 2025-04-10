@@ -17,17 +17,20 @@
             </p>
 
             <div class="mt-6">
-              <a
+              <RouterLink
                 class="btn btn-primary mb-4 sm:mb-0 w-full sm:w-auto"
-                href="https://github.com/onwidget/qwind"
+                to="https://github.com/onwidget/qwind"
                 target="_blank"
                 rel="noopener"
               >
                 Get template
-              </a>
+              </RouterLink>
             </div>
           </div>
         </div>
       </div>
     </section>
 </template>
+<script setup>
+ import { RouterLink } from 'vue-router';
+</script>

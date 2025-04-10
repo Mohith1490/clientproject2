@@ -1,5 +1,5 @@
 <template>
-    <section class="px-6 py-16 pt-8 lg:pt-8 mx-auto lg:px-8 lg:py-20 max-w-3xl bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <section class="px-6 py-16 pt-8 lg:pt-8 mx-auto lg:px-8 lg:py-20 max-w-3xl  text-gray-900 dark:text-gray-100">
       <div class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tight prose-headings:tracking-tight prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8">
         <div class="prose mx-auto p-6">
           <h1 class="text-6xl font-bold mb-4">Terms and Conditions</h1>
