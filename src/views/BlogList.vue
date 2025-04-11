@@ -19,7 +19,7 @@
         </div>
       </header>
       <div
-        class="prose-md prose-headings:font-heading prose-headings:leading-tighter container prose prose-lg mx-auto mt-8 max-w-3xl px-6 prose-headings:font-bold prose-headings:tracking-tighter prose-a:text-primary-600 prose-img:rounded-md prose-img:shadow-lg dark:prose-invert dark:prose-headings:text-slate-300 dark:prose-a:text-primary-400 sm:px-6 lg:prose-xl"
+        class="prose-md custom-style prose-headings:font-heading prose-headings:leading-tighter container prose prose-lg mx-auto mt-8 max-w-3xl px-6 prose-headings:font-bold prose-headings:tracking-tighter prose-a:text-primary-600 prose-img:rounded-md prose-img:shadow-lg dark:prose-invert dark:prose-headings:text-slate-300 dark:prose-a:text-primary-400 sm:px-6 lg:prose-xl"
         v-html="post.data" />
     </article>
   </section>
@@ -104,3 +104,111 @@ function formatDate(date) {
   });
 }
 </script>
+
+<style >
+   /* Typography */
+   .custom-style h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  line-height: 1.2;
+}
+
+.custom-style h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  line-height: 1.3;
+}
+
+.custom-style h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  line-height: 1.4;
+}
+
+.custom-style h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  line-height: 1.4;
+}
+
+.custom-style h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  line-height: 1.4;
+}
+
+.custom-style p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.custom-style a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.custom-style a:hover {
+  text-decoration: underline;
+}
+
+.custom-style em {
+  font-style: italic;
+  color: #555;
+}
+
+.custom-style ul,
+.custom-style ol {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+.custom-style li {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.custom-style hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2rem 0;
+}
+
+.custom-style table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.custom-style thead {
+  background-color: #f0f0f0;
+}
+
+.custom-style tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-style th,
+.custom-style td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+
+.custom-style th {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+.custom-style tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+</style>
